@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Problema2.Models.Market>
+@{
+	ViewBag.Title = "Home Page";
+}
+
+@foreach (var item in Model)
+{
+	<tr>
+		<td>
+			@Html.DisplayFor(modelItem => item.Aerolinea)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Date)
+		</td>
+	</tr>
+}
